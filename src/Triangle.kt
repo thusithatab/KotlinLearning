@@ -11,6 +11,6 @@ class Triangle(
         println("$name perimeter is ${perimeter()}")
     }
 
-    fun area(): Double = sqrt((perimeter()/2) * ((perimeter()/2) - a) * ((perimeter()/2) - b) * ((perimeter()/2) - c))
-    fun perimeter() = a + b + c
+    override fun area(): Double = sqrt((perimeter()/2) * ((perimeter()/2) - a) * ((perimeter()/2) - b) * ((perimeter()/2) - c))
+    override fun perimeter() = a + b + c
 }
